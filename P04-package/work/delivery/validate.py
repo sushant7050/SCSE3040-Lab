@@ -1,5 +1,3 @@
-"Is this order usable?"
-
 
 def is_valid_order(order):
     "True if the order passes every rule."
