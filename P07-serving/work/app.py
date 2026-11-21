@@ -53,7 +53,12 @@ def predict(order: Order):
 def model_info():
     "Describe the model this service is running."
     return {
-        "features": FEATURES,
+        "features": [
+            "distance_km",
+            "prep_time_min",
+            "traffic_level",
+            "rain"
+        ],
         "model_type": type(model).__name__,
-        "version": app.version,
+        "version": app.version
     }
